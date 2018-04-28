@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta http-equiv="Content-Type" Content="text/html; charset=utf-8;">
+        <title>移动端触摸滑动</title>
+        <meta name="author" content="rainna" />
+        <meta name="keywords" content="rainna's js lib" />
+        <meta name="description" content="移动端触摸滑动" />
+        <meta name="viewport" content="target-densitydpi=320,width=640,user-scalable=no">
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div class="body">
+          <img src="https://t.el3.51eduline.com/data/upload/2017/1031/09/59f7ce8b1411b_1920_420_1920_420.png">
+          <img src="https://t.el3.51eduline.com/data/upload/2018/0228/14/5a964dba07058_1920_420_1920_420.jpg">
+          <img src="https://t.el3.51eduline.com/data/upload/2017/1031/09/59f7ce911b156_1920_420_1920_420.png">
+        <ul>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+          <a href="javascript:;" class="left"></a>
+          <a href="javascript:;" class="right"></a>
+        </div>
+    </body>
+    <script src="http://www.jq22.com/jquery/jquery-2.1.1.js"></script>
+    <script src="./slider.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $.slider({
+      imgElement:$(".body img"),
+      liElement:$(".body li"),
+      leftBtn:$(".left"),
+      rightBtn:$(".right"),
+      time:5000,
+      imgbox:$(".body")
+    })
+    </script>
+</html>
